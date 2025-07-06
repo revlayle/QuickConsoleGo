@@ -1,0 +1,22 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*_test
+
+# Output of `go build`
+# For example, if you build your binary to `bin/my_app`
+bin/
+
+# Dependency caches
+# Go module cache
+.cache/go-build/
+# Go module vendor directory (if not vendored manually)
+vendor/
+
+# Environment files
+.env
+.env.*
