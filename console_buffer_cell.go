@@ -1,4 +1,4 @@
-package main
+package quickconsole
 
 func (cell ConsoleBufferCell) WithCharacter(c rune) ConsoleBufferCell {
 	return ConsoleBufferCell{

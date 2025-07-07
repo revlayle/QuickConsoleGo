@@ -1,4 +1,4 @@
-package main
+package quickconsole
 
 const (
 	AnsiColorDefault = iota

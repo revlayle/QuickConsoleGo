@@ -1,4 +1,4 @@
-package main
+package quickconsole
 
 import "io"
 
@@ -24,13 +24,13 @@ type ConsoleBufferer interface {
 	DrawBox(x, y, width, height int, cell ConsoleBufferCell)
 	DrawBoxComplex(x, y, width, height int, cellSides, cellTopBottom, cellCorner ConsoleBufferCell)
 	DrawLine(x, y, length int, direction int, cell ConsoleBufferCell)
-	GetCellAt(x, y int) ConsoleBufferCell
+	GetCellAt(x, y int) (ConsoleBufferCell, error)
 	GetStringAt(x, y, length int) string
-	DrawBuffer(x, y int, buffer ConsoleBuffer)
+	DrawBuffer(x, y int, buffer *ConsoleBuffer)
 	Scroll(xd, yd int)
 	Flip(horizontal, vertical bool)
 	Rotate(x, y, width int, clockwise bool)
-	Copy(x, y, width, height int) ConsoleBuffer
+	Copy(x, y, width, height int) (*ConsoleBuffer, error)
 }
 
 type ConsoleBufferCeller interface {

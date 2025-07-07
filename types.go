@@ -1,4 +1,4 @@
-package main
+package quickconsole
 
 type ConsoleBufferCell struct {
 	Character  rune

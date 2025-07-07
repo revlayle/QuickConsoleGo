@@ -1,4 +1,4 @@
-package main
+package quickconsole
 
 var consoleBufferCellDefault = ConsoleBufferCell{
 	Character:  0,
